@@ -4,7 +4,7 @@ import java.util.*;
 
 public class TopKFrequentElements {
     public static void main(String[] args) {
-        int[] nums = {1, 1, 1, 2, 2, 3};
+        int[] nums = {1, 1, 1, 2, 2, 3,4};
         int k = 2;
         HashMap<Integer, Integer> h = new HashMap<>();
         for (int num : nums) {
