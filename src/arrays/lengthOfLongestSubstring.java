@@ -7,7 +7,7 @@ public class lengthOfLongestSubstring {
         String s= "abcabcbb";
         int left = 0, right = 0;
         int maxLen = 0;
-        HashSet<Character> set = new HashSet<>();
+        HashSet<Character> set = new HashSet<>(); //uniquely identify elements
         while (right < s.length()) {
             char c = s.charAt(right);
             while (set.contains(c)) {
