@@ -11,8 +11,6 @@ public class InfiniteArray {
         //start with the window size 2
         int start = 0;
         int end = 1;
-
-
         // check if the target is in the range basically check if the target is less than end
         // keep doubling the window size until the target is less than end :) cause the array is sorted(ASCENDING)
         while(target > arr[end]){
@@ -27,7 +25,6 @@ public class InfiniteArray {
     static int BinarySearchMethod(int[] arr, int target ,int start , int end ){
         while(start <= end){
             int mid = start + (end - start) / 2;
-
             if(target < arr[mid]){
                 end = mid - 1;
             }
