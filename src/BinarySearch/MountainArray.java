@@ -2,14 +2,13 @@ package BinarySearch;
 
 public class MountainArray {
     public static void main(String[] args) {
-    int[] arr={0,10,5,2};
+    int[] arr={1,2,3,4,5,6,7,8,9,10};
     int ans = FindingPeak(arr);
     System.out.print(ans);
     }
     static int FindingPeak(int [] arr){
         int start = 0;
         int end = arr.length-1;
-
         while (start <  end){
             int mid = start + (end - start)/2;
             if(arr[mid] > arr[mid+1]){
