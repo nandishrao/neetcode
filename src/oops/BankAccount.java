@@ -45,7 +45,6 @@ public final class BankAccount {
     // 4. CONTROLLED MUTATORS (BUSINESS METHODS INSTEAD OF NAKED SETTERS)
 
     public void deposit(double amount) {
-        // Controlled mutation: Validation rule
         if (amount <= 0) {
             throw new IllegalArgumentException("Deposit amount must be greater than 0.");
         }
