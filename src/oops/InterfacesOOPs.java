@@ -7,6 +7,9 @@ interface Callable {
     // Abstract Method: public abstract by default (NO BODY)
     void makeCall(String phoneNumber);
     void endCall();
+
+
+    static  int a = 10;
 }
 
 // INTERFACE 2: Capability to track location
